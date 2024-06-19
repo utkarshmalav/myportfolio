@@ -1,0 +1,642 @@
+<!-- Utkarsh Malav Portfolio -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Utkarsh Malav Portfolio</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<link rel="stylesheet" href="css/aos.css">
+
+	<link rel="stylesheet" href="css/ionicons.min.css">
+
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<style>
+		.about-mf .box-shadow-full {
+			padding-top: 4rem;
+			padding-bottom: 4rem;
+		}
+
+		.about-mf .about-img {
+			margin-bottom: 2rem;
+		}
+
+		.about-mf .about-img img {
+			margin-left: 10px;
+		}
+
+
+		.skill-mf .progress {
+			/* background-color: #cde1f8; */
+			margin: .5rem 0 1.2rem 0;
+			border-radius: 0;
+			height: .7rem;
+		}
+
+		.skill-mf .progress .progress-bar {
+			height: .7rem;
+			background-color: #ffbd39;
+		}
+
+
+		#typing-animation {
+			position: relative;
+			font-size: 30px;
+			font-weight: bold;
+			color: rgb(255, 255, 255);
+			overflow: hidden;
+			white-space: nowrap;
+			animation: typing 3s steps(20, end) infinite;
+		}
+
+		#typing-animation:before {
+			content: "";
+			top: 0;
+			left: 0;
+			width: 0;
+			height: 100%;
+			background-color: #ccc;
+			animation: typing-cursor 0.5s ease-in-out infinite;
+		}
+
+		@keyframes typing {
+			from {
+				width: 0;
+			}
+
+			to {
+				width: 100%;
+			}
+		}
+
+		@keyframes typing-cursor {
+			from {
+				width: 5px;
+			}
+
+			to {
+				width: 0;
+			}
+		}
+
+		.zoom-effect {
+			overflow: hidden;
+			transition: transform 0.3s ease-out;
+		}
+
+		.zoom-effect:hover {
+			transform: scale(1.1);
+		}
+	</style>
+
+
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+		<div class="container">
+			<a class="navbar-brand" href="">Utkarsh Malav</a>
+			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav nav ml-auto">
+					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+					<li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+					<li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<section id="home-section" class="hero">
+		<div class="home-slider  owl-carousel">
+			<div class="slider-item ">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
+						data-scrollax-parent="true">
+						<div class="one-third js-fullheight order-md-last img"
+							style="background-image:url(images/bg_11.png); height: 10px;">
+							<div class="overlay"></div>
+						</div>
+						<div class="one-forth d-flex  align-items-center ftco-animate"
+							data-scrollax=" properties: { translateY: '70%' }">
+							<div class="text">
+								<br><br><br><br><br><br><br><br>
+								<span class="subheading">Hello!</span>
+								<h1 class="mb-4 mt-3">I'm <span>Utkarsh Malav</span></h1>
+								<span id="typing-animation"></span>
+
+								<script>
+									const typingAnimationElement = document.getElementById('typing-animation');
+
+									const typingTexts = [
+										'Programmer  ',
+										'Developer  ',
+										'Fresher  ',
+									];
+
+									function playTypingAnimation(text) {
+										for (let i = 0; i < text.length; i++) {
+											setTimeout(() => {
+												typingAnimationElement.textContent += text[i];
+											}, i * 200);
+										}
+
+										setTimeout(() => {
+											typingAnimationElement.textContent = '';
+											playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+										}, text.length * 200);
+									}
+
+									playTypingAnimation(typingTexts[0]);
+
+								</script>
+
+								<br>
+								<br>
+								<h2>BTech Student</h2>
+								<p>
+									<a href="https://drive.google.com/drive/folders/1rfElsHHVQh9JUXp56frqed0ZE4RTaPiS?usp=sharing"
+										target="_blank" class="btn btn-primary py-3 px-4">Projects</a>
+									<a href="https://leetcode.com/u/utkarshmalav005/"
+										class="btn btn-white btn-outline-white py-3 px-4" target="_blank">LeetCode</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section" style="margin: 15px;">
+		<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+										<div class="about-img">
+											<img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
+										</div>
+									</div>
+									<div class="col-sm-6 col-md-7">
+										<div class="about-info">
+											<p><span class="title-s">Name: </span> <span>Utkarsh Malav</span></p>
+											<p><span class="title-s">Education: </span> <span>BTech CSE</span>
+											</p>
+											<p><span class="title-s">Experience: </span> <span>6 Months
+													Internship</span>
+											</p>
+											<p><span class="title-s">Address: </span> <span>Kolhapur, India</span></p>
+										</div>
+									</div>
+								</div>
+
+								<br>
+								<div class="skill-mf">
+									<p class="title-s" style="font-size: x-large;"><strong>Skills</strong></p>
+
+
+									<span>C++</span> <span class="pull-right">50%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 50%;"
+											aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+
+									<span>Java</span> <span class="pull-right">60%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 60%"
+											aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+
+									<span>Python</span> <span class="pull-right">50%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 50%"
+											aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+
+									<span>JavaScript</span> <span class="pull-right">20%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 20%"
+											aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+
+									<span>MySQL</span> <span class="pull-right">50%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 50%"
+											aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								<h2 class="mb-4">About Me</h2>
+
+								<p>I am a fast learner and consistent in my efforts. Passionate about coding and
+									problem-solving, I am eager to dive into the tech industry to enhance my skills and
+									gain valuable experience. I am particularly interested in learning new technologies
+									and applying them to solve real-time problems.</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Software Developer</span>
+									</li>
+									<li class="d-flex"><span>Domain:</span> <span>Information & Technology</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Bachelor of Technology
+											(Pursuing)</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Marathi, Hindi</span></li>
+									<li class="d-flex"><span>Soft Skills:</span> <span>Problem Solving, Time Management,
+											Critical Thinking, Teamwork, Communication, Adaptability</span></li>
+									<li class="d-flex"><span>Other Skills:</span> <span>HTML, CSS, PHP, Git, GitHub,
+											Canva, PicsArt</span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Playing chess, Traveling, and
+											Exploring</span></li>
+
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</section>
+
+
+
+
+	<section class="ftco-section ftco-no-pb" id="resume-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-10 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Resume</h1>
+					<br><br><br><br><br><br><br>
+					<p>A fresher and final-year student pursuing a degree, I am passionate about exploring new
+						innovations and technologies. I thrive on learning from others and seek opportunities to solve
+						real-time problems, innovate, enhance my knowledge, and showcase my skills.
+					</p>
+				</div>
+			</div>
+			<br><br><br>
+			<div class="row">
+				<h1 class="big-4">Experience</h1>
+				<div class="underline"></div>
+			</div>
+			<br>
+
+			<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Dec 2023 - May 2024</span>
+						<h2>Web Developer Intern</h2>
+						<span class="position">Real Time Application Center (RTAC)</span>
+						<p class="mt-4">RTAC is a company that develops various software products and solutions for
+							businesses.
+						<ul>
+							<li>In this 6 months of Internship, 1 month was training period and 5 month of working on
+								realtime projects</li>
+							<li>I had the experience of working with senior developers, which helped me learn how to
+								collaborate effectively in a team. Through this experience, I gained knowledge of
+								industry standards, programming, data handling and database management.
+							</li>
+							<li style="font-weight: bold; color: rgb(219, 207, 103);">Technical Skills : HTML , CSS ,
+								JavaScript , jQuery , AJAX , PHP , MySQL</li>
+
+						</ul>
+						</p>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">July 2023 - Nov 2023</span>
+						<h2>Network Designing Intern</h2>
+						<span class="position">D Y Patil College of Engineering</span>
+						<p class="mt-4">College provided an internship to design a network for the upcoming new
+							datacenter.
+						<ul>
+							<li>In this 5 months of internship, our work was to collect the network-related requirements
+								and design a network to fulfill those requirements.</li>
+							<li>
+								We were a group of five, and we suggested many changes to fulfill staff requirements
+								with fewer resources. We also presented why cloud services are beneficial for the
+								future.
+							</li>
+							<li style="font-weight: bold; color: rgb(219, 207, 103);">Skills : Internet Connection,
+								Bandwidth, WIFI, VPN, Cloud based services</li>
+
+						</ul>
+						</p>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Sep 2023 - Oct 2023</span>
+						<h2>Python Developer Intern</h2>
+						<h2>(Virtual Mode)</h2>
+						<span class="position">CodeClause pvt ltd</span>
+						<p class="mt-4">CodeClause is an online internship-providing company that gives basic tasks to
+							check problem-solving capability and help to learn new things.
+						<ul>
+							<li>I completed two basic tasks: An Stopwatch and Temperature Converter.</li>
+							<li style="font-weight: bold; color: rgb(219, 207, 103);">Skills : Basics of Python, Time
+								Library, Pint Library</li>
+						</ul>
+						</p>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">May 2023 - June 2023</span>
+						<h2>Java Developer Intern</h2>
+						<h2>(Virtual Mode)</h2>
+						<span class="position">Oasis InfoByte pvt ltd</span>
+						<p class="mt-4">Oasis InfoByte is an online internship-providing company that gives basic tasks
+							to check problem-solving capability and help to learn new things.
+						<ul>
+							<li>I completed two tasks: An ATM Interface and Number Guessing Game.</li>
+							<li style="font-weight: bold; color: rgb(219, 207, 103);">Skills: Basics of Java, DSA, Java
+								Swing</li>
+						</ul>
+						</p>
+					</div>
+				</div>
+
+
+			</div>
+
+			<br>
+			<br>
+
+			<div class="row">
+				<h1 class="big-4">Education</h1>
+				<div class="underline"></div>
+			</div>
+			<br>
+
+			<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2019 - 2021</span>
+						<h2>12th Science with Elective Subject (Computer Science)</h2>
+						<span class="position">Haribhai Devkaran Junior college of Science, Solapur</span>
+						<p class="mt-4">Grade: First class distinction.</p>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2021 - Present</span>
+						<h2>BTECH Computer Science & Engineering</h2>
+						<span class="position">D Y Patil college of Engineering & Technology, Kolhapur</span>
+						<p class="mt-4">Grade: First class distinction.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row justify-content-center mt-5">
+				<div class="col-md-6 text-center ftco-animate">
+					<p><a href="https://drive.google.com/uc?export=download&id=1QfakCjg5zSg6l2OTxS83Bf_5vb51L0od"
+							class="btn btn-primary py-4 px-5">Download CV</a></p>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<section class="ftco-section" id="project-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-5">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Projects</h1>
+					<br><br><br><br>
+					<p></p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+		<div class="container">
+			<div class="row d-md-flex align-items-center">
+				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+					<div class="block-18">
+						<div class="text">
+							<strong class="number" data-number="5">0</strong>
+							<span>Achievements</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+					<div class="block-18">
+						<div class="text">
+							<strong class="number" data-number="5">0</strong>
+							<span>Projects</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+					<div class="block-18">
+						<div class="text">
+							<strong class="number" data-number="">0</strong>
+							<span>People Visited</span>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<br><br><br>
+		<div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>More projects on<span> Github </span> </h2>
+					<div class="heading">
+						<h4>I love to find complex problems &amp solve them in a simple way!</h4>
+						<br>
+						<p><a href="https://github.com/utkarshmalav" target="_blank"
+								class="btn btn-primary py-3 px-5">GitHub</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Contact</h1>
+					<br><br><br><br><br>
+				</div>
+			</div>
+
+			<div class="row d-flex contact-info mb-5">
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-map-signs"></span>
+						</div>
+						<h3 class="mb-4">Address</h3>
+						<p>Kolhapur (Maharshtra), India</p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-phone2"></span>
+						</div>
+						<h3 class="mb-4">Contact Number</h3>
+						<p><a href="tel:+917276663836">+91 7276663836</a></p>
+					</div>
+				</div>
+
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-paper-plane"></span>
+						</div>
+						<h3 class="mb-4">Email Address</h3>
+						<p><a href="mailto:utkarshmalav005@gmail.com" target="_blank">utkarshmalav005@gmail.com</a></p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-book"></span>
+						</div>
+						<h3 class="mb-4">View Resume</h3>
+						<p><a style="color: rgb(145, 110, 110);"
+								href="https://drive.google.com/drive/folders/1QcY9gLR-nkyHTEMCQGkbfj9pImdO6OyT?usp=sharing"
+								target="_blank">Click Here</a></p>
+					</div>
+				</div>
+
+				<div class="container">
+					<br>
+					<br>
+					<div class="row justify-content-center">
+						<div class="col-md-7 ftco-animate text-center">
+							<h2>Have a <span>Question?</span>
+							</h2>
+							<h5><span>Find me on</span>
+							</h5>
+						</div>
+					</div>
+
+					<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+
+						<li class="ftco-animate">
+							<a href="https://www.linkedin.com/in/utkarsh-malav-6b2940265/" target="_blank"
+								title="LinkedIn">
+								<span class="icon-linkedin"></span>
+							</a>
+						</li>
+						<li class="ftco-animate">
+							<a href="https://github.com/utkarshmalav" target="_blank" title="GitHub">
+								<span class="icon-github"></span>
+							</a>
+						</li>
+						<li class="ftco-animate">
+							<a href="https://www.instagram.com/uttu_malav?igsh=N2MxYW41cmxrN2Vl" target="_blank"
+								title="Instagram">
+								<span class="icon-instagram"></span>
+							</a>
+						</li>
+						<li class="ftco-animate">
+							<a href="https://wa.me/917276663836" target="_blank" title="WhatsApp">
+								<span class="icon-whatsapp"></span>
+							</a>
+						</li>
+						<li class="ftco-animate">
+							<a href="https://leetcode.com/u/utkarshmalav005/" target="_blank" title="LeetCode">
+								<span class="icon-code"></span>
+							</a>
+						</li>
+
+					</ul>
+					<br>
+				</div>
+			</div>
+	</section>
+
+
+
+
+	<footer class="ftco-footer ftco-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+
+					<p>
+						Copyright &copy;
+						<script>document.write(new Date().getFullYear());</script> All rights reserved | This template
+						is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a
+							href="https://colorlib.com" target="_blank">Colorlib</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+				stroke="#F96D00" />
+		</svg></div>
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
